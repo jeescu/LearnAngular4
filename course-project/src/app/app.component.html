@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+      <!-- <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list> -->
+    </div>
+    <div>
+      <h4>Exercises</h4>
+      <p appBasicHighlight>Style me with basic highlight directive</p>
+      <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Style me with better highlight directive</p>
+      <!-- displays when false -->
+      <span *appUnless="false">Using 'unless' custom directive</span>
+      <p>Pipes</p>
+      <span>{{ title | shorten:5 }}</span>
+    </div>
+  </div>
+</div>
